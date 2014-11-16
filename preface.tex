@@ -1,127 +1,128 @@
-\chapter{Preface}
+\chapter{Предисловие}
 
-\section{The strange history of this book}
+\section{Странная история этой книги}
 
-In January 1999 I was preparing to teach an introductory programming class in
-Java. I had taught it three times and I was getting frustrated. The failure rate
-in the class was too high and, even for students who succeeded, the overall
-level of achievement was too low.
+В январе 1999 года я готовился преподавать вводные занятия по программированию
+на Java. Я преподавал их уже три раза, и меня это не удовлетворяло. Показатель
+результативности учеников был слишком низким и даже для успевающих студентов
+общий уровень обучения был недостаточным.
 
-One of the problems I saw was the books. They were too big, with too much
-unnecessary detail about Java, and not enough high-level guidance about how to
-program. And they all suffered from the trap door effect: they would start out
-easy, proceed gradually, and then somewhere around Chapter 5 the bottom would
-fall out. The students would get too much new material, too fast, and I would
-spend the rest of the semester picking up the pieces.
+Одной из проблем, которые я видел, были учебники. Они были слишком большими,
+включали слишком много ненужных деталей о Java, и не имели достаточного
+количества высокоуровневых рекомендаций по программированию в общем. И все они
+страдали от эффекта люка: легкое начало, последовательное изложение материала, а
+затем где-то на пятой главе пол проваливается. Студенты получают слишком много
+нового материала, и слишком быстро, а я провожу остаток семестра собирая
+осколки.
 
-Two weeks before the first day of classes, I decided to write my own book. My
-goals were:
+За две недели до начала занятий я решил написать свою собственную книгу.
+Моими целями были:
 
 \begin{itemize}
- \item Keep it short. It is better for students to read 10 pages than not read
- 50 pages.
- \item Be careful with vocabulary.
-I tried to minimize the jargon and define each term at first use.
- \item Build gradually.
-To avoid trap doors, I took the most difficult topics and split them into a
-series of small steps.
- \item Focus on programming, not the programming language. I included the
- minimum
-useful subset of Java and left out the rest.
+\item Будьте кратки. Для студентов лучше прочитать 10 страниц, чем не читать 50.
+\item Будьте осторожны со словарем. Я старался минимизировать жаргон, и
+определять каждый термин при первом использовании.
+\item Вводите постепенно. Чтобы избежать люков, я взял самые сложные темы, и
+разделил их на ряд небольших шагов.
+\item Сосредоточьтесь на программировании, а не на языке программирования.
+Я включил минимальное полезное подмножество Java и выкинул остальное.
 \end{itemize}
 
-I needed a title, so on a whim I chose \emph{How to Think Like a Computer
-Scientist}.
+Мне было нужно название, и по наитию я выбрал \emph{How to Think Like a Computer
+Scientist} (думаем как программист).
 
-My first version was rough, but it worked. Students did the reading, and they
-understood enough that I could spend class time on the hard topics, the
-interesting topics and (most important) letting the students practice.
+Моя первая версия была грубой, но она работала. Студенты почитали, и поняли
+достаточно, чтобы я мог потратить учебное время на трудные темы, на интересные
+темы и (важнее всего) на практику.
 
-I released the book under the GNU Free Documentation License, which allows users
-to copy, modify, and distribute the book.
+Я выпустил книгу под лицензией GNU Free Documentation License, которая позволяет
+пользователям копировать, изменять и распространять книгу.
 
-What happened next is the cool part. Jeff Elkner, a high school teacher in
-Virginia, adopted my book and translated it into Python. He sent me a copy of
-his translation, and I had the unusual experience of learning Python by reading
-my own book. As Green Tea Press, I published the first Python version in 2001.
+Круче всего то, что произошло дальше. Джефф Элкнер (Jeff Elkner), преподаватель
+ВУЗа в Виргинии, одобрил мою книгу и перевел её на Python. Он прислал мне копию
+своей адаптации, и у меня появился необычный опыт изучения Python чтением моей
+собственной книги. Я опубликовал первую Python-версию в издательстве Green Tea
+Press в 2001 году.
 
-In 2003 I started teaching at Olin College and I got to teach Python for the
-first time. The contrast with Java was striking. Students struggled less,
-learned more, worked on more interesting projects, and generally had a lot more
-fun.
+В 2003 году я начал преподавать в Olin College\footnote{Franklin W.
+Olin College of Engineering,  Needham, Массачусетс (около Бостона)}, и там я
+впервые стал преподавать Python. Контраст с Java был поразительным. Студенты
+меньше продирались через материал, учились большему, работали над более
+интересными проектами, и в целом было гораздо веселее. 
 
-Over the last nine years I continued to develop the book, correcting errors,
-improving some of the examples and adding material, especially exercises.
+Последние девять лет я продолжил развивать эту книгу, исправляя ошибки, улучшая
+некоторые примеры и добавляя материал, особенно упражнения.
 
-The result is this book, now with the less grandiose title Think Python. Some of
-the changes are:
+Результат\ --- эта книга, теперь с менее помпезным названием: \emph{Think
+Python} (Думаем на Python). Вот некоторые из этих изменений:
 
 \begin{itemize}
-\item I added a section about debugging at the end of each chapter. These
-sections present general techniques for finding and avoiding bugs, and warnings
-about Python pitfalls.
-\item I added more exercises, ranging from short tests of understanding to a few
-substantial projects. And I wrote solutions for most of them.
-\item I added a series of case studies\ --- longer examples with exercises,
-solutions, and discussion. Some are based on Swampy, a suite of Python programs
-I wrote for use in my classes. Swampy, code examples, and some solutions are
-available from \url{http://thinkpython.com}.
-\item I expanded the discussion of program development plans and basic design
-patterns.
-\item I added appendices about debugging, analysis of algorithms, and UML
-diagrams with Lumpy.
+\item Я добавил раздел об отладке в конце каждой главы. Эти разделы показывают
+общие методы поиска и предотвращения ошибок, и предупреждают о ловушках в
+Python.
+\item Я добавил больше упражнений, варьирующихся от коротких тестов до
+нескольких значительных проектов. И я написал решения для большинства из них.
+\item Я добавил серию учебных примеров\ --- более длинных заданий с
+упражнениями, решениями и обсуждением. Некоторые из них основаны на Swampy,
+наборе программ на Python, которые я написал для использования на моих занятиях.
+Swampy, примеры кода, и некоторые решения доступны на
+\url{http://thinkpython.com}.
+\item Я расширил обсуждение program development plans и базовых шаблонов
+проектирования.
+\item Я добавил приложения об отладке, анализе алгоритмов, и диаграммами UML с
+Lumpy.
 \end{itemize}
 
 \bigskip
-I hope you enjoy working with this book, and that it helps you learn to program
-and think, at least a little bit, like a computer scientist.
+Я надеюсь, что вы насладитесь работой с этой книгой, и она поможет вам научиться
+программировать, и, хотя бы немного, думать как программист.
 
 \bigskip
-Allen B. Downey 
+Аллен Б. Дауни 
 
 Needham MA 
 
 \bigskip
-Allen Downey is a Professor of Computer Science at the Franklin W. Olin College
-of Engineering.
+Аллен Дауни\ --- Профессор Информатики в Инженерном Колледже Франклина В. Олина.
 
-\section{Acknowledgments}
+\section{Благодарности}
 
-Many thanks to Jeff Elkner, who translated my Java book into Python, which got
-this project started and introduced me to what has turned out to be my favorite
-language.
+Большое спасибо Джеффу Элкнеру, тому кто перевел мою книгу с Java на Python,
+создал этот проект, и приобщил меня к тому, что, как оказалось, является моим
+любимым языком программирования.
 \bigskip
 
-Thanks also to Chris Meyers, who contributed several sections to \emph{How to
-Think Like a Computer Scientist}.
+Спасибо также Крису Мейерсу, добавившему несколько разделов к \emph{How to Think
+Like a Computer Scientist}.
 \bigskip
 
-Thanks to the Free Software Foundation for developing the GNU Free Documentation
-License, which helped make my collaboration with Jeff and Chris possible, and Creative
-Commons for the license I am using now.
+Спасибо Фонду Свободного программного Обеспечения за разработку Свободной
+Лицензии GNU на Документацию, которая помогла сделать моё сотрудничество с
+Джеффом и Крисом возможным, и Creative Commons, за лицензию, которую я использую
+сейчас.
 \bigskip
 
-Thanks to the editors at Lulu who worked on \emph{How to Think Like a Computer
-Scientist}.
+Благодаря редакторов в Лулу, которые работали над \emph{How to Think Like a
+Computer Scientist}.
 \bigskip
 
-Thanks to all the students who worked with earlier versions of this book and all
-the contributors (listed below) who sent in corrections and suggestions.
+Спасибо всем студентам, которые работали с ранними версиями этой книги, и всем
+участникам (перечислены ниже), которые присылали корректировки и предложения.
 \bigskip
 
-\section{Contributor List}
+\section{Список участников}
 
-More than 100 sharp-eyed and thoughtful readers have sent in suggestions and
-corrections over the past few years. Their contributions, and enthusiasm for
-this project, have been a huge help.
+Более сотни зорких и вдумчивых читателей присылали мне предложения и исправления
+в течение нескольких последних лет. Их вклад в этот проект и энтузиазм к нему
+были огромной помощью.
 
-If you have a suggestion or correction, please send email to
-\email{feedback@thinkpython.com}. If I make a change based on your feedback, I
-will add you to the contributor list (unless you ask to be omitted).
-
-If you include at least part of the sentence the error appears in, that makes it
-easy for me to search. Page and section numbers are fine, too, but not quite as
-easy to work with. Thanks!
+Если у вас тоже есть предложения или исправления, пожалуйста, отправьте их на
+\email{feedback@thinkpython.com}. Если я внесу изменение по вашим отзывам, я
+добавлю вас в список участников (если вы не попросите, чтобы вас не учитывали).
+ 
+Если вы включите по крайней мере часть предложения, в котором появляется ошибка,
+мне будет легче ее искать. Номера страниц и разделов тоже подходят, но с ними не
+так удобно работать. Спасибо!
 
 \begin{itemize}
 \item Lloyd Hugh Allen sent in a correction to Section 8.4. 
